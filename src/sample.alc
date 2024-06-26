@@ -1,0 +1,18 @@
+
+
+type Todo =
+    id: int
+    name: string
+
+
+
+let addTodo = (currentList: Todo[], newTodo: Todo) =>
+    return [newTodo | currentList]
+
+
+let peekTodo = (currList: Todo[]) => 
+    return match currList with
+        | [] => Nil
+        | [curr | rest] => curr
+    
+
